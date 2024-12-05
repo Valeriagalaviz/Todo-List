@@ -1,0 +1,93 @@
+:root{
+    --primary-color: #a9ebff;
+    --secondary-color: #2c2d36;
+    --terciary-color: #47cfc4;
+    --fourth-color: #7c7e97;
+    --fifth-color: #0594c0;
+    --sixth-color: #ffffff;
+    --bg: #404e9e;
+    --text-size: 1.5rem;
+    --text-color: #ffffff;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--bg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+.header{
+    padding: 10px 0 5px 0;
+}
+.add{
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+}
+.add input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--sixth-color);
+    padding-left: 10px;
+}
+#input::placeholder{
+    font-size: 1.1rem;
+    color: var(--fifth-color);
+}
+
+.add i{
+    font-size: 45px;
+    color: var(--terciary-color);
+}
+
+.add i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.tasks h2{
+    margin-bottom: 20px;
+}
+
+.tasks {
+    font-size: 25px;
+}
+
+.tasks li{
+    background-color: var(--fourth-color);
+    border: 2px solid var(--terciary-color);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--primary-color);
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 15px rgba(131, 131, 131, 0.5);
+}
+
+
+.tasks i:hover{
+    color: var(--fifth-color);
+}
+
+.crossed{
+    text-decoration: line-through;
+    color: var(--terciary-color);
+}
